@@ -1,0 +1,190 @@
+/** @format */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+html,
+/* Force font typography inherit */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+/* :root {
+  ### Primary
+
+- Orange: hsl(25, 97%, 53%)
+
+### Neutral
+
+- White: hsl(0, 0%, 100%)
+- Light Grey: hsl(217, 12%, 63%)
+- Medium Grey: hsl(216, 12%, 54%)
+- Dark Blue: hsl(213, 19%, 18%)
+- Very Dark Blue: hsl(216, 12%, 8%)
+} */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Overpass", sans-serif;
+}
+body {
+  display: flex;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  background-color: hsl(216, 12%, 8%);
+  color: white;
+}
+.card {
+  width: 90vw;
+  background-color: hsl(219, 21%, 13%);
+  border-radius: 2em;
+  max-width: 350px;
+}
+.rating_section {
+  display: grid;
+  gap: 1.5em;
+  width: 100%;
+  padding: 2em;
+}
+.thank_section {
+  display: grid;
+  text-align: center;
+  gap: 1.5em;
+  width: 100%;
+  padding: 2em;
+}
+.rating_section p {
+  font-size: 0.8rem;
+  color: hsl(216, 12%, 54%);
+  padding-right: 2em;
+  line-height: 1.8;
+  margin: 0 auto;
+}
+.icon {
+  padding: 1em;
+  border-radius: 100px;
+  background-color: hsla(216, 12%, 54%, 0.048);
+}
+.ratings {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+}
+.ratings span {
+  display: flex;
+  background-color: hsla(216, 12%, 54%, 0.205);
+  color: hsl(217, 12%, 63%);
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.ratings span:hover {
+  background-color: hsl(217, 12%, 63%);
+  color: white;
+}
+button {
+  background-color: hsl(25, 97%, 53%);
+  border: none;
+  border-radius: 2rem;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 0.9rem;
+  padding: 0.8em 1.5em;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+button:hover {
+  color: hsl(25, 97%, 53%);
+  background-color: white;
+  font-weight: 700;
+}
+.h1 {
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin-bottom: 0;
+}
+.chip {
+  background-color: hsla(216, 12%, 54%, 0.205);
+  width: auto;
+  margin: 1rem auto;
+  padding: 0.8rem 1.2rem;
+  border-radius: 2rem;
+  font-size: 0.875rem;
+  color: hsl(25, 97%, 53%);
+}
+
+/*  psuedo class  */
+.checked {
+  background-color: hsl(25, 97%, 53%) !important;
+  color: white !important;
+}
+.h2 {
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin-bottom: 0;
+}
+.message {
+  /* display: inline-flex; */
+  margin: 0 auto;
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: hsl(25, 97%, 53%);
+  opacity: 0.8;
+  border-radius: 2rem;
+  background-color: hsla(216, 12%, 54%, 0.205);
+  padding: 0.5em 1em;
+}
+.message-2 {
+  font-size: 0.8rem;
+  color: hsl(216, 12%, 54%);
+  line-height: 1.8;
+  padding: 0 2em;
+}
+.thank_section img {
+  align-self: center;
+  justify-self: center;
+}
+.hidden {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  .card {
+    /* display: flex;
+    flex-wrap: wrap; */
+    max-width: 90vw;
+  }
+  .rating_section {
+    width: 100%;
+  }
+  .thank_section {
+    width: 100%;
+  }
+  .selector {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+  }
+}
+/* .attribution {
+  font-size: 0.95rem;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+} */
